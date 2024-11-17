@@ -84,8 +84,14 @@ with col2:
                 # Make a POST request to the FastAPI endpoint
                 response = requests.post(API_URL, json=payload)
                 response.raise_for_status()  # Raise error for bad responses
+
+                # Check if the response contains the 'pred' key
                 prediction = response.json()
-                # Display the prediction
-                st.success(f"Predicted Performance Score: {prediction['pred']}")
+                if 'pred' in prediction:
+                    # Display the prediction
+                    st.success(f"Predicted Performance Score: {prediction['pred']}")
+                else:
+                    st.error("Prediction key ('pred') not found in the response.")
+                    
             except requests.exceptions.RequestException as e:
                 st.error(f"An error occurred: {e}")

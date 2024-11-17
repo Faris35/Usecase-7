@@ -56,21 +56,21 @@ with st.expander("📋 Input Summary", expanded=True):
     st.write(
         f"""
         - **Appearances**: {appearance}
-        - **Assists**: {assists}
         - **Days Injured**: {days_injured}
         - **Games Missed**: {games_injured}
         - **Awards**: {award}
-        - **Highest Value (€)**: {highest_value}
+        - **Assists**: {assists}
+        - **Highest Value**: {highest_value}
         """
     )
 
 # Create a payload for the API request
 payload = {
     "appearance": appearance,
-    "assists": assists,
     "days_injured": days_injured,
     "games_injured": games_injured,
     "award": award,
+    "assists": assists,
     "highest_value": highest_value,
 }
 

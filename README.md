@@ -34,7 +34,6 @@ To run this app locally, follow these steps:
 1. Clone the repository:
     ```bash
     git clone https://github.com/Faris35/Usecase-7.git
-    cd player-performance-prediction
     ```
 
 2. Install the required dependencies:

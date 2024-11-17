@@ -5,7 +5,7 @@ from fastapi import FastAPI
 
 from sklearn.metrics import pairwise_distances_argmin_min
 
-model = joblib.load('dbscan_model.joblib')
+model = joblib.load('dbscan_model(1).joblib')
 scaler = joblib.load('scaler(1).joblib')
 
 class InputFeatures(BaseModel):

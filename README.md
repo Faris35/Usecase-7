@@ -1,7 +1,7 @@
 # Player Performance Prediction App
 
 This Streamlit app predicts the performance score of a player based on input features such as appearances, assists, injury days, and more. The prediction model is hosted via a FastAPI service deployed on Render.
-
+[Try it out](https://player-position-prediction.streamlit.app/)
 ## Table of Contents
 
 1. [Overview](#overview)
